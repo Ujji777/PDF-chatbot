@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.env
+
+# Django-related
+db.sqlite3
+media/
+uploads/
+vector_store/
+hf_cache/
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Docker
+*.pid
