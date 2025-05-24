@@ -1,0 +1,11 @@
+Django
+gunicorn
+whitenoise
+pdf2image
+pytesseract
+langchain
+langchain-community
+chromadb
+groq
+python-dotenv
+dj-database-url
