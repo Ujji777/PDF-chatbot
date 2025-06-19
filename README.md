@@ -133,6 +133,6 @@ Set URL to http://localhost:8000/api/upload/ or /api/query/
 Use form-data or raw JSON as shown above
 
 📌 Credits
-Built by Ujjwal Tak as part of a Gen-AI internship task.
+Built by Ujjwal Tak as part of a Gen-AI Project.
 Inspired by real-world use cases of OCR + vector-based retrieval + LLM response generation.
 
