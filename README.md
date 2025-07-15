@@ -1,5 +1,5 @@
 A document-aware chatbot built using Django REST Framework, Groq (LLaMA 3), LangChain, and OCR. It allows you to upload PDFs (including scanned image PDFs), extract text via OCR if needed, store embeddings, and query the documents using a powerful LLM — all inside a Dockerized app.
-📂 Features
+ Features
 Upload text-based or image-based PDFs
 
 Extract text using PyMuPDF and fallback to OCR (pytesseract)
@@ -12,7 +12,7 @@ Query documents using Groq’s LLaMA 3 for answers
 
 Fully containerized with Docker
 
-🧰 Tech Stack
+Tech Stack
 Python + Django REST Framework
 
 LangChain + HuggingFaceEmbeddings
@@ -25,14 +25,14 @@ pytesseract + pdf2image (OCR)
 
 Docker
 
-🚀 Setup Instructions
-1️⃣ Clone the repo
+Setup Instructions
+1️. Clone the repo
 bash
 Copy
 Edit
 git clone https://github.com/Ujji777/UJJWAL-Tak-wasserstoff-AiInternTask.git
 cd UJJWAL-Tak-wasserstoff-AiInternTask
-2️⃣ Create a .env file
+2️. Create a .env file
 Create a file named .env in the root of the project:
 
 env
@@ -40,9 +40,9 @@ Copy
 Edit
 GROQ_API_KEY=your_groq_api_key_here
 DEBUG=True
-👉 You can get a free Groq key from: https://console.groq.com/keys
+ You can get a free Groq key from: https://console.groq.com/keys
 
-3️⃣ Run using Docker
+3️. Run using Docker
 bash
 Copy
 Edit
@@ -50,7 +50,7 @@ docker build -t chatbot-app .
 docker run -p 8000:8000 --env-file .env chatbot-app
 Now visit: http://localhost:8000/
 
-🧪 API Endpoints
+ API Endpoints
 📤 Upload Document (with OCR fallback)
 POST /api/upload/
 
@@ -70,7 +70,7 @@ Edit
   "embedded_chunks": 12,
   "extracted_text": "Penalty provisions..."
 }
-❓ Query the Document
+* Query the Document
 POST /api/query/
 
 JSON body:
@@ -114,7 +114,7 @@ chatbot_project/
 ├── manage.py
 ├── Dockerfile
 └── requirements.txt
-🛠 Run Locally (Optional)
+* Run Locally (Optional)
 If you prefer not to use Docker:
 
 bash
@@ -132,7 +132,7 @@ Set URL to http://localhost:8000/api/upload/ or /api/query/
 
 Use form-data or raw JSON as shown above
 
-📌 Credits
+# Credits
 Built by Ujjwal Tak as part of a Gen-AI Project.
 Inspired by real-world use cases of OCR + vector-based retrieval + LLM response generation.
 
